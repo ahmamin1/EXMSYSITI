@@ -1,0 +1,14 @@
+F:\ITI\c#\VisualC#\lastttt\DbModels\bin\Debug\net6.0\DbModels.deps.json
+F:\ITI\c#\VisualC#\lastttt\DbModels\bin\Debug\net6.0\DbModels.runtimeconfig.json
+F:\ITI\c#\VisualC#\lastttt\DbModels\bin\Debug\net6.0\DbModels.dll
+F:\ITI\c#\VisualC#\lastttt\DbModels\bin\Debug\net6.0\DbModels.pdb
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.csproj.AssemblyReference.cache
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.AssemblyInfoInputs.cache
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.AssemblyInfo.cs
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.csproj.CoreCompileInputs.cache
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.dll
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\refint\DbModels.dll
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.pdb
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\DbModels.genruntimeconfig.cache
+F:\ITI\c#\VisualC#\lastttt\DbModels\obj\Debug\net6.0\ref\DbModels.dll
