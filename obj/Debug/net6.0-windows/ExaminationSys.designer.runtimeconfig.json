@@ -12,10 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\zz\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\zz\\.nuget\\packages"
+      "C:\\Users\\Ahmed Amin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Ahmed Amin\\.nuget\\packages"
     ],
     "configProperties": {
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
