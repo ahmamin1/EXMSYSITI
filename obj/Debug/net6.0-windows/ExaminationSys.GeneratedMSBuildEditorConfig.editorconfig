@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExaminationSys
-build_property.ProjectDir = F:\ITI\c#\VisualC#\Exam\EXMSYSITI\
+build_property.ProjectDir = D:\ITI\C#Project\EXMSYSITI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
