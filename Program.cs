@@ -14,6 +14,8 @@ namespace ExaminationSys
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new EntryForm());
+            //Application.Run(new TakeExamForm());
+           
         }
     }
 }

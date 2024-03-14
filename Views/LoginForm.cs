@@ -29,6 +29,7 @@ namespace ExaminationSys.Views
 
             StudentHome SHform = new StudentHome();
             SHform.Show();
+            //here i want to check if user student will show student home page  and teacher also
 
 
             this.Hide();
