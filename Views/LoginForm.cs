@@ -92,6 +92,8 @@ namespace ExaminationSys.Views
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+
+        
         {
 
         }

@@ -12,8 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\zz\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\zz\\.nuget\\packages"
+=======
+      "C:\\Users\\Ahmed Amin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Ahmed Amin\\.nuget\\packages"
+>>>>>>> b7b55ddcf57b7150e28d3d31c39ced31c8339c38
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
