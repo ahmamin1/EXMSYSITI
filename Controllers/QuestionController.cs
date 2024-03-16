@@ -7,7 +7,8 @@ namespace ExaminationSys.Controllers
 {
     internal class QuestionController
     {
-        private readonly ExamDbContext dbContext = new();
+        private readonly ExamDbContext _dbContext = new();
+
 
         /// <summary>
         /// Adds a new question to the database.
@@ -18,8 +19,8 @@ namespace ExaminationSys.Controllers
         {
             try
             {
-                dbContext.Questions.Add(question);
-                dbContext.SaveChanges();
+                _dbContext.Questions.Add(question);
+                _dbContext.SaveChanges();
                 return true;
             }
             catch (Exception ex)
@@ -35,7 +36,28 @@ namespace ExaminationSys.Controllers
         /// <returns>A collection of all questions.</returns>
         public ICollection<Questions> GetAllQuestions()
         {
-            return dbContext.Questions.ToList();
+            return _dbContext.Questions.ToList();
+        }
+
+        /// <summary>
+        /// Retrieves a question by its ID from the database.
+        /// </summary>
+        /// <param name="questionId">The ID of the question.</param>
+        /// <returns>The question with the specified ID, or null if not found.</returns>
+        public Questions GetQuestionById(int questionId)
+        {
+            try
+            {
+                // Retrieve the question with the specified ID from the database
+                var question = _dbContext.Questions.Find(questionId);
+                return question;
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions, e.g., database connection issues
+                Console.WriteLine($"Error occurred while retrieving question by ID: {ex.Message}");
+                return null;
+            }
         }
 
         /// <summary>
@@ -45,7 +67,7 @@ namespace ExaminationSys.Controllers
         /// <returns>A collection of questions associated with the specified exam.</returns>
         public ICollection<Questions> GetQuestionsByExam(int examId)
         {
-            return dbContext.Questions.Where(q => q.ExamId == examId).ToList();
+            return _dbContext.Questions.Where(q => q.ExamId == examId).ToList();
         }
 
         /// <summary>
@@ -57,7 +79,7 @@ namespace ExaminationSys.Controllers
         {
             try
             {
-                var answers = dbContext.Answers.Where(a => a.QuestionId == questionId).ToList();
+                var answers = _dbContext.Answers.Where(a => a.QuestionId == questionId).ToList();
                 return answers;
             }
             catch (Exception ex)
@@ -67,6 +89,16 @@ namespace ExaminationSys.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieves correct answers associated with a specific question from the database.
+        /// </summary>
+        /// <param name="questionId">The ID of the question.</param>
+        /// <returns>A collection of correct answers associated with the specified question.</returns>
+        public ICollection<Answer> GetCorrectAnswer(int questionId)
+        {
+            var question = GetQuestionById(questionId);
+            return question?.Answers.Where(a => a.IsCorrect).ToList() ?? new List<Answer>();
+        }
 
         /// <summary>
         /// Deletes a question from the database.
@@ -77,12 +109,12 @@ namespace ExaminationSys.Controllers
         {
             try
             {
-                var questionToDelete = dbContext.Questions.Find(questionId);
+                var questionToDelete = _dbContext.Questions.Find(questionId);
 
                 if (questionToDelete != null)
                 {
-                    dbContext.Questions.Remove(questionToDelete);
-                    dbContext.SaveChanges();
+                    _dbContext.Questions.Remove(questionToDelete);
+                    _dbContext.SaveChanges();
                     return true;
                 }
 
