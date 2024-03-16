@@ -17,8 +17,10 @@ namespace ExaminationSys.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Questions> Questions { get; set; }
+        public DbSet<Answer> Answers { get; set; }
         public DbSet<Exam> Exams { get; set; }
         public override int SaveChanges()
         {
@@ -43,8 +45,10 @@ namespace ExaminationSys.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-
-                optionsBuilder.UseSqlServer("Server=DESKTOP-C90KJR9\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
+                //amin
+                optionsBuilder.UseSqlServer("Server=AMIN\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
+                //ibrahem
+                //optionsBuilder.UseSqlServer("Server=DESKTOP-C90KJR9\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
             }
         }
     }

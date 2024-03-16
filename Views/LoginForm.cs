@@ -74,7 +74,11 @@ namespace ExaminationSys.Views
             this.Hide();
         }
 
+<<<<<<< HEAD
         private void groupBox1_Enter(object sender, EventArgs e)
+=======
+        private void label4_Click(object sender, EventArgs e)
+>>>>>>> 419449561f07131810871bbdbee19faa0d994aea
         {
 
         }
