@@ -7,9 +7,6 @@
     <Compile Update="Views\CreateExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\EntryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\StudentHome.cs">
       <SubType>Form</SubType>
     </Compile>

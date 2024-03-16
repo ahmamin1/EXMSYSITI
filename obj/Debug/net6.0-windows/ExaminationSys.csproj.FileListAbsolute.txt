@@ -1,8 +1,5 @@
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.exe
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.deps.json
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.runtimeconfig.json
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.dll
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.pdb
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\Azure.Core.dll
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\Azure.Identity.dll
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\Humanizer.dll
@@ -60,12 +57,12 @@ F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\runtimes\win\lib\net6
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.csproj.AssemblyReference.cache
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Properties.Resources.resources
+F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.ChooseSubject.resources
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.CreateExam.resources
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.EntryForm.resources
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.Form1.resources
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.LoginForm.resources
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.RegisterForm.resources
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.StudentHome.resources
+F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.TakeExamForm.resources
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Home.resources
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.csproj.GenerateResource.cache
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.GeneratedMSBuildEditorConfig.editorconfig
@@ -76,10 +73,14 @@ F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.csproj
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.dll
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\refint\ExaminationSys.dll
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.pdb
+F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.deps.json
+F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.runtimeconfig.json
+F:\ITI\c#\VisualC#\Exam\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.pdb
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.genruntimeconfig.cache
 F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ref\ExaminationSys.dll
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.ChooseSubject.resources
-F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.Views.TakeExamForm.resources
+<<<<<<< HEAD
+F:\ITI\c#\VisualC#\Exam\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.TeacherHome.resources
+=======
 D:\ITI\C#Project\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.exe
 D:\ITI\C#Project\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.deps.json
 D:\ITI\C#Project\EXMSYSITI\bin\Debug\net6.0-windows\ExaminationSys.runtimeconfig.json
@@ -163,3 +164,5 @@ D:\ITI\C#Project\EXMSYSITI\obj\Debug\net6.0-windows\refint\ExaminationSys.dll
 D:\ITI\C#Project\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.pdb
 D:\ITI\C#Project\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.genruntimeconfig.cache
 D:\ITI\C#Project\EXMSYSITI\obj\Debug\net6.0-windows\ref\ExaminationSys.dll
+>>>>>>> 419449561f07131810871bbdbee19faa0d994aea
+D:\ITI\C#Project\EXMSYSITI\obj\Debug\net6.0-windows\ExaminationSys.TeacherHome.resources

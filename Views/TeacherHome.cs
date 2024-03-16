@@ -76,5 +76,10 @@ namespace ExaminationSys
             // Show the external form
             CSF.Show();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
