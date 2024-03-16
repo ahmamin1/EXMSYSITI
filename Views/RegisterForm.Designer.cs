@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,25 +40,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ConfirmPassword = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
+            this.RegisterValidateErrorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-=======
-            groupBox1 = new GroupBox();
-            SubmitToLogin = new Button();
-            LoginLabel = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            ConfirmPassword = new TextBox();
-            Password = new TextBox();
-            UserName = new TextBox();
-            label5 = new Label();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
->>>>>>> 419449561f07131810871bbdbee19faa0d994aea
             // 
             // label5
             // 
-<<<<<<< HEAD
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Navy;
@@ -108,7 +93,7 @@
             this.SubmitToLogin.TabIndex = 25;
             this.SubmitToLogin.Text = "Submit";
             this.SubmitToLogin.UseVisualStyleBackColor = false;
-            this.SubmitToLogin.Click += new System.EventHandler(this.SubmitToLogin_Click_1);
+            this.SubmitToLogin.Click += new System.EventHandler(this.SubmitToLogin_Click);
             // 
             // LoginLabel
             // 
@@ -174,6 +159,16 @@
             this.Password.Size = new System.Drawing.Size(287, 49);
             this.Password.TabIndex = 19;
             // 
+            // RegisterValidateErrorLabel
+            // 
+            this.RegisterValidateErrorLabel.AutoSize = true;
+            this.RegisterValidateErrorLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RegisterValidateErrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.RegisterValidateErrorLabel.Location = new System.Drawing.Point(482, 322);
+            this.RegisterValidateErrorLabel.Name = "RegisterValidateErrorLabel";
+            this.RegisterValidateErrorLabel.Size = new System.Drawing.Size(0, 25);
+            this.RegisterValidateErrorLabel.TabIndex = 28;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -181,6 +176,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(947, 490);
+            this.Controls.Add(this.RegisterValidateErrorLabel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.UserTypeCombobox);
             this.Controls.Add(this.UserName);
@@ -201,135 +197,6 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-=======
-            groupBox1.BackColor = Color.DimGray;
-            groupBox1.Controls.Add(SubmitToLogin);
-            groupBox1.Controls.Add(LoginLabel);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(ConfirmPassword);
-            groupBox1.Controls.Add(Password);
-            groupBox1.Controls.Add(UserName);
-            groupBox1.Location = new Point(38, 79);
-            groupBox1.Margin = new Padding(3, 4, 3, 4);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 4, 3, 4);
-            groupBox1.Size = new Size(720, 452);
-            groupBox1.TabIndex = 8;
-            groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // SubmitToLogin
-            // 
-            SubmitToLogin.BackColor = Color.LimeGreen;
-            SubmitToLogin.Cursor = Cursors.Hand;
-            SubmitToLogin.Location = new Point(293, 352);
-            SubmitToLogin.Margin = new Padding(3, 4, 3, 4);
-            SubmitToLogin.Name = "SubmitToLogin";
-            SubmitToLogin.Size = new Size(195, 68);
-            SubmitToLogin.TabIndex = 15;
-            SubmitToLogin.Text = "Submit";
-            SubmitToLogin.UseVisualStyleBackColor = false;
-            SubmitToLogin.Click += SubmitToLogin_Click;
-            // 
-            // LoginLabel
-            // 
-            LoginLabel.AutoSize = true;
-            LoginLabel.Cursor = Cursors.Hand;
-            LoginLabel.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            LoginLabel.ForeColor = Color.Chartreuse;
-            LoginLabel.Location = new Point(264, 307);
-            LoginLabel.Name = "LoginLabel";
-            LoginLabel.Size = new Size(354, 28);
-            LoginLabel.TabIndex = 14;
-            LoginLabel.Text = "Already have Account? Go to Login";
-            LoginLabel.Click += LoginLabel_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(139, 252);
-            label3.Name = "label3";
-            label3.Size = new Size(127, 20);
-            label3.TabIndex = 13;
-            label3.Text = "Confirm Password";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(139, 143);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 20);
-            label2.TabIndex = 12;
-            label2.Text = "Password";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(139, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(82, 20);
-            label1.TabIndex = 11;
-            label1.Text = "User Name";
-            // 
-            // ConfirmPassword
-            // 
-            ConfirmPassword.Location = new Point(293, 228);
-            ConfirmPassword.Margin = new Padding(3, 4, 3, 4);
-            ConfirmPassword.Multiline = true;
-            ConfirmPassword.Name = "ConfirmPassword";
-            ConfirmPassword.PasswordChar = '*';
-            ConfirmPassword.Size = new Size(244, 56);
-            ConfirmPassword.TabIndex = 10;
-            // 
-            // Password
-            // 
-            Password.Location = new Point(293, 125);
-            Password.Margin = new Padding(3, 4, 3, 4);
-            Password.Multiline = true;
-            Password.Name = "Password";
-            Password.PasswordChar = '*';
-            Password.Size = new Size(244, 56);
-            Password.TabIndex = 9;
-            // 
-            // UserName
-            // 
-            UserName.Location = new Point(293, 19);
-            UserName.Margin = new Padding(3, 4, 3, 4);
-            UserName.Multiline = true;
-            UserName.Name = "UserName";
-            UserName.Size = new Size(244, 56);
-            UserName.TabIndex = 8;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Franklin Gothic Medium", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label5.ForeColor = Color.LimeGreen;
-            label5.Location = new Point(344, 12);
-            label5.Name = "label5";
-            label5.Size = new Size(147, 39);
-            label5.TabIndex = 9;
-            label5.Text = "Register";
-            // 
-            // RegisterForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
-            ClientSize = new Size(832, 627);
-            Controls.Add(label5);
-            Controls.Add(groupBox1);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "RegisterForm";
-            Text = "RegisterForm";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
->>>>>>> 419449561f07131810871bbdbee19faa0d994aea
         }
 
         #endregion
@@ -344,5 +211,6 @@
         private Label label1;
         private TextBox ConfirmPassword;
         private TextBox Password;
+        private Label RegisterValidateErrorLabel;
     }
 }

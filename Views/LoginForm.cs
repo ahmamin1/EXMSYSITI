@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExaminationSys.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,9 +15,11 @@ namespace ExaminationSys.Views
 
     public partial class LoginForm : Form
     {
+        private LoginController _loginController;
         public LoginForm()
         {
             InitializeComponent();
+            _loginController = new LoginController();
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -29,36 +32,48 @@ namespace ExaminationSys.Views
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            string username = LoginUserName.Text;
+            string password = LoginPassword.Text;
+            string role = UserTypeCombobox.SelectedItem?.ToString();
 
-            string selectedValue = UserTypeCombobox.SelectedItem.ToString();
-
-            // Display SecondaryForm based on the selected value
-            if (selectedValue == "Student")
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(role))
             {
+                ErrorMsgLoginLabel.Text = "Please enter username, password, and select a role.";
+                return;
+            }
 
-                TeacherHome SHform = new TeacherHome();
-                SHform.Show();
-                
+            bool isAuthenticated = _loginController.AuthenticateUser(username, password, role);
+
+            if (isAuthenticated)
+            {
+                ErrorMsgLoginLabel.Text="Authentication successful!";
+                // Open appropriate form based on user role
+                switch (role.ToLower())
+                {
+                    case "student":
+                        StudentHome studentHomeForm = new StudentHome();
+                        studentHomeForm.Show();
+                        break;
+                    case "teacher":
+                        TeacherHome teacherHomeForm = new TeacherHome();
+                        teacherHomeForm.Show();
+                        break;
+                    case "admin":
+                        AdminHome adminHomeForm = new AdminHome();
+                        adminHomeForm.Show();
+                        break;
+                }
                 this.Hide();
             }
-            else if (selectedValue == "Teacher")
+            else
             {
-               Home THform = new Home();
-                THform.Show();
-
-                this.Hide();
+                ErrorMsgLoginLabel.Text = "Authentication failed. Please check your credentials.";
             }
         }
 
-        private void Password_TextChanged(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void UserName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -67,18 +82,16 @@ namespace ExaminationSys.Views
 
         private void CreateNewAccountLabel_Click(object sender, EventArgs e)
         {
-            RegisterForm Rform = new RegisterForm();
+            RegisterController controller = new RegisterController();
+
+            RegisterForm Rform = new RegisterForm(controller);
             Rform.Show();
 
-
             this.Hide();
+          
         }
 
-<<<<<<< HEAD
         private void groupBox1_Enter(object sender, EventArgs e)
-=======
-        private void label4_Click(object sender, EventArgs e)
->>>>>>> 419449561f07131810871bbdbee19faa0d994aea
         {
 
         }

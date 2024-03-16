@@ -1,6 +1,6 @@
 ﻿namespace ExaminationSys
 {
-    partial class TeacherHome
+    partial class AdminHome
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherHome));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminHome));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnExpand = new System.Windows.Forms.PictureBox();
@@ -173,14 +173,14 @@
             this.TeacherHomePanel.Name = "TeacherHomePanel";
             this.TeacherHomePanel.Resize += new System.EventHandler(this.Home_Load);
             // 
-            // TeacherHome
+            // AdminHome
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.TeacherHomePanel);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TeacherHome";
+            this.Name = "AdminHome";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.sidebar.ResumeLayout(false);

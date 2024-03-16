@@ -2,11 +2,11 @@ using ExaminationSys.Views;
 
 namespace ExaminationSys
 {
-    public partial class TeacherHome : Form
+    public partial class AdminHome : Form
     {
 
         bool sidebarexpand;
-        public TeacherHome()
+        public AdminHome()
         {
             InitializeComponent();
         }

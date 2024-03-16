@@ -1,6 +1,6 @@
 ﻿namespace ExaminationSys
 {
-    partial class TeacherHome
+    partial class StudentHome
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherHome));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentHome));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnExpand = new System.Windows.Forms.PictureBox();
@@ -226,13 +226,14 @@
             // 
             this.HomePanel.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
             this.HomePanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.HomePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomePanel.BackgroundImage")));
             this.HomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HomePanel.Location = new System.Drawing.Point(141, 0);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(788, 605);
             this.HomePanel.TabIndex = 1;
             // 
-            // TeacherHome
+            // StudentHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -242,7 +243,7 @@
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TeacherHome";
+            this.Name = "StudentHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TeacherHome_Load);

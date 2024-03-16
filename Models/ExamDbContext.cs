@@ -46,9 +46,9 @@ namespace ExaminationSys.Models
             if (!optionsBuilder.IsConfigured)
             {
                 //amin
-                optionsBuilder.UseSqlServer("Server=AMIN\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
+              //  optionsBuilder.UseSqlServer("Server=AMIN\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
                 //ibrahem
-                //optionsBuilder.UseSqlServer("Server=DESKTOP-C90KJR9\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-C90KJR9\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
             }
         }
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ExaminationSys.Controllers
 {
-    internal class RegisterController
+    public class RegisterController
     {
         private readonly ExamDbContext _context = new();
         /// <summary>
