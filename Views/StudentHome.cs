@@ -2,11 +2,11 @@ using ExaminationSys.Views;
 
 namespace ExaminationSys
 {
-    public partial class StudentHome : Form
+    public partial class TeacherHome : Form
     {
 
         bool sidebarexpand;
-        public StudentHome()
+        public TeacherHome()
         {
             InitializeComponent();
         }
@@ -80,6 +80,16 @@ namespace ExaminationSys
 
             // Show the external form
             CSF.Show();
+
+        }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TeacherHome_Load(object sender, EventArgs e)
+        {
 
         }
     }

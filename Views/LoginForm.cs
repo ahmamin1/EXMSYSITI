@@ -21,18 +21,33 @@ namespace ExaminationSys.Views
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            UserTypeCombobox.Items.Add("Teacher");
+            UserTypeCombobox.Items.Add("Student");
+            UserTypeCombobox.Items.Add("Admin");
+            UserTypeCombobox.SelectedIndex = 0;
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
 
-            StudentHome SHform = new StudentHome();
-            SHform.Show();
-            //here i want to check if user student will show student home page  and teacher also
+            string selectedValue = UserTypeCombobox.SelectedItem.ToString();
 
+            // Display SecondaryForm based on the selected value
+            if (selectedValue == "Student")
+            {
 
-            this.Hide();
+                TeacherHome SHform = new TeacherHome();
+                SHform.Show();
+                
+                this.Hide();
+            }
+            else if (selectedValue == "Teacher")
+            {
+               Home THform = new Home();
+                THform.Show();
+
+                this.Hide();
+            }
         }
 
         private void Password_TextChanged(object sender, EventArgs e)
@@ -57,6 +72,11 @@ namespace ExaminationSys.Views
 
 
             this.Hide();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
