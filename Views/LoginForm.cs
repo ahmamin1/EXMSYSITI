@@ -58,5 +58,10 @@ namespace ExaminationSys.Views
 
             this.Hide();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

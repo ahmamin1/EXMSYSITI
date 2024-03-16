@@ -23,14 +23,10 @@ namespace ExaminationSys.Models
         public int QuestionId { get; set; }
         public int Points { get; set; }
         public string Header { get; set; }
-        public QuestionType questionType { get; set; }
-
-        [ForeignKey("Subject")]
-        public int SubjectId { get; set; }
-        public virtual Subject Subject { get; set; }
-
-
-        public virtual ICollection<Answer> Answers { get; set; }
+        public QuestionType QuestionType { get; set; }
+        public int ExamId { get; set; }
+        public virtual Exam? Exam { get; set; }
+        public virtual ICollection<Answer>? Answers { get; set; }
 
     }
 }
