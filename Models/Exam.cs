@@ -22,12 +22,12 @@ namespace ExaminationSys.Models
 
         [ForeignKey("Subject")]
         public int SubjectId { get; set; }
-        public Subject Subject { get; set; }
+        public Subject ?Subject { get; set; }
 
         [ForeignKey("CreatedBy")]
         public int CreatedById { get; set; }
-        public virtual Teacher CreatedBy { get; set; }
+        public virtual Teacher ?CreatedBy { get; set; }
 
-        public ICollection<Questions> Questions { get; set; }
+        public ICollection<Questions> ?Questions { get; set; }
     }
 }

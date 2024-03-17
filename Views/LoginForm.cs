@@ -34,7 +34,7 @@ namespace ExaminationSys.Views
         {
             string username = LoginUserName.Text;
             string password = LoginPassword.Text;
-            string role = UserTypeCombobox.SelectedItem?.ToString();
+            string role = UserTypeCombobox.SelectedItem.ToString();
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(role))
             {

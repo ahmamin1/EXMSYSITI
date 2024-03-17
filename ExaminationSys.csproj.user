@@ -19,6 +19,9 @@
     <Compile Update="Views\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\SubjectManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\TakeExamForm.cs">
       <SubType>Form</SubType>
     </Compile>

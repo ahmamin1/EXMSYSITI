@@ -58,28 +58,27 @@ namespace ExaminationSys
             CEF.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            TeacherHomePanel.Controls.Clear();
-
-            ChooseSubject CSF = new ChooseSubject();
-
-            // Set properties of the external form
-            CSF.TopLevel = false;
-            CSF.FormBorderStyle = FormBorderStyle.None;
-            CSF.Dock = DockStyle.Fill;
-
-            // Add the external form to the panel
-            TeacherHomePanel.Controls.Add(CSF);
-
-            // Show the external form
-            CSF.Show();
-        }
+       
 
         private void Home_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void GetAllSubjectBtn_Click(object sender, EventArgs e)
+        {
+            TeacherHomePanel.Controls.Clear();
+            SubjectManagementForm SMF = new SubjectManagementForm();
+            // Set properties of the external form
+            SMF.TopLevel = false;
+            SMF.FormBorderStyle = FormBorderStyle.None;
+            SMF.Dock = DockStyle.Fill;
+
+            // Add the external form to the panel
+            TeacherHomePanel.Controls.Add(SMF);
+
+            // Show the external form
+            SMF.Show();
         }
     }
 }

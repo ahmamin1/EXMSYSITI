@@ -189,9 +189,8 @@
         private Label label3;
         private Label label4;
         private ComboBox UserTypeCombobox;
-<<<<<<< HEAD
+
         private Label ErrorMsgLoginLabel;
-=======
->>>>>>> b7b55ddcf57b7150e28d3d31c39ced31c8339c38
+
     }
 }

@@ -22,7 +22,7 @@ namespace ExaminationSys.Models
         [Key]
         public int QuestionId { get; set; }
         public int Points { get; set; }
-        public string Header { get; set; }
+        public string ?Header { get; set; }
         public QuestionType QuestionType { get; set; }
         public int ExamId { get; set; }
         public virtual Exam? Exam { get; set; }

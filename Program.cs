@@ -16,10 +16,11 @@ namespace ExaminationSys
             ApplicationConfiguration.Initialize();
             //  Application.Run(new EntryForm());
             //Application.Run(new TakeExamForm());
-            RegisterController controller = new RegisterController();
-            Application.Run(new RegisterForm(controller));
-           // Application.Run(new RegisterForm());
-
+            // RegisterController controller = new RegisterController();
+            // Application.Run(new RegisterForm(controller));
+            // Application.Run(new RegisterForm());
+            //Application.Run(new SubjectManagementForm());
+            Application.Run(new ChooseSubject());
         }
     }
 }

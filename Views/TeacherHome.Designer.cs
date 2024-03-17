@@ -34,9 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnExpand = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CreateExamBtn = new System.Windows.Forms.Button();
+            this.GetAllSubjectBtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -54,9 +53,8 @@
             this.sidebar.AllowDrop = true;
             this.sidebar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.button2);
-            this.sidebar.Controls.Add(this.button3);
-            this.sidebar.Controls.Add(this.button1);
+            this.sidebar.Controls.Add(this.CreateExamBtn);
+            this.sidebar.Controls.Add(this.GetAllSubjectBtn);
             this.sidebar.Controls.Add(this.button4);
             this.sidebar.Controls.Add(this.button5);
             this.sidebar.Controls.Add(this.button6);
@@ -88,34 +86,25 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Name = "label1";
             // 
-            // button2
+            // CreateExamBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.CreateExamBtn.BackColor = System.Drawing.Color.Navy;
+            resources.ApplyResources(this.CreateExamBtn, "CreateExamBtn");
+            this.CreateExamBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreateExamBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CreateExamBtn.Name = "CreateExamBtn";
+            this.CreateExamBtn.UseVisualStyleBackColor = false;
+            this.CreateExamBtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // GetAllSubjectBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.Navy;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.GetAllSubjectBtn.BackColor = System.Drawing.Color.Navy;
+            resources.ApplyResources(this.GetAllSubjectBtn, "GetAllSubjectBtn");
+            this.GetAllSubjectBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GetAllSubjectBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GetAllSubjectBtn.Name = "GetAllSubjectBtn";
+            this.GetAllSubjectBtn.UseVisualStyleBackColor = false;
+            this.GetAllSubjectBtn.Click += new System.EventHandler(this.GetAllSubjectBtn_Click);
             // 
             // button4
             // 
@@ -197,10 +186,9 @@
         private Panel panel1;
         private PictureBox BtnExpand;
         private Label label1;
-        private Button button3;
-        private Button button2;
+        private Button CreateExamBtn;
         private System.Windows.Forms.Timer SidebarTimer;
-        private Button button1;
+        private Button GetAllSubjectBtn;
         private Panel TeacherHomePanel;
         private Button button4;
         private Button button5;
