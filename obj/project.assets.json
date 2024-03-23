@@ -3093,19 +3093,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zz\\.nuget\\packages\\": {}
+    "C:\\Users\\Ahmed Amin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ITI\\c#\\VisualC#\\Exam\\EXMSYSITI\\ExaminationSys.csproj",
+      "projectUniqueName": "D:\\ITI\\C#Project\\EXMSYSITI\\ExaminationSys.csproj",
       "projectName": "ExaminationSys",
-      "projectPath": "F:\\ITI\\c#\\VisualC#\\Exam\\EXMSYSITI\\ExaminationSys.csproj",
-      "packagesPath": "C:\\Users\\zz\\.nuget\\packages\\",
-      "outputPath": "F:\\ITI\\c#\\VisualC#\\Exam\\EXMSYSITI\\obj\\",
+      "projectPath": "D:\\ITI\\C#Project\\EXMSYSITI\\ExaminationSys.csproj",
+      "packagesPath": "C:\\Users\\Ahmed Amin\\.nuget\\packages\\",
+      "outputPath": "D:\\ITI\\C#Project\\EXMSYSITI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ahmed Amin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3125,6 +3125,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3157,6 +3162,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -3165,7 +3188,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

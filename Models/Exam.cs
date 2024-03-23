@@ -18,16 +18,16 @@ namespace ExaminationSys.Models
         [Key]
         public int ExamId { get; set; }
         public ExamType Type { get; set; }
-        public double Grade { get; set; }
 
         [ForeignKey("Subject")]
         public int SubjectId { get; set; }
-        public Subject ?Subject { get; set; }
+        public Subject Subject { get; set; }
 
         [ForeignKey("CreatedBy")]
         public int CreatedById { get; set; }
-        public virtual Teacher ?CreatedBy { get; set; }
+        public Teacher CreatedBy { get; set; }
 
-        public ICollection<Questions> ?Questions { get; set; }
+        public ICollection<Questions> Questions { get; set; }
+        public ICollection<StudentsExams> StudentsExams { get; set; } = new List<StudentsExams>();
     }
 }

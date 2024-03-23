@@ -23,12 +23,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Views\AdminHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Views\TeacherHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Views\AdminHome.cs" />
+    <Compile Update="Views\TeacherHome.cs" />
   </ItemGroup>
 
   <ItemGroup>

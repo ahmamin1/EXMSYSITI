@@ -22,6 +22,7 @@ namespace ExaminationSys.Models
         public DbSet<Questions> Questions { get; set; }
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Exam> Exams { get; set; }
+        public DbSet<StudentsExams> StudentsExams { get; set; }
         public override int SaveChanges()
         {
             var entities = ChangeTracker.Entries()
@@ -46,10 +47,22 @@ namespace ExaminationSys.Models
             if (!optionsBuilder.IsConfigured)
             {
                 //amin
-              //  optionsBuilder.UseSqlServer("Server=AMIN\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=AMIN\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
                 //ibrahem
-                optionsBuilder.UseSqlServer("Server=DESKTOP-C90KJR9\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
+                //optionsBuilder.UseSqlServer("Server=DESKTOP-C90KJR9\\SQLEXPRESS;Database=ExamSystem;Trusted_Connection=True;\nTrustServerCertificate=True;");
             }
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<StudentsExams>().HasKey(se => new { se.StudentId, se.ExamId });
+            modelBuilder.Entity<StudentsExams>()
+        .HasOne(se => se.Student)
+        .WithMany(s => s.StudentsExams)
+        .HasForeignKey(se => se.StudentId)
+        .OnDelete(DeleteBehavior.NoAction); // Specify ON DELETE NO ACTION
+        }
+
+
     }
 }

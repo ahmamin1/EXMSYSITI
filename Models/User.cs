@@ -18,13 +18,14 @@ namespace ExaminationSys.Models
 
     public class Student : User
     {
-        public ICollection<Subject> Subjects { get; set; }
+        public ICollection<Subject>? Subjects { get; set; }
+        public ICollection<StudentsExams>? StudentsExams { get; set; } = new List<StudentsExams>();
+
     }
 
     public class Teacher : User
     {
-
-        public ICollection<Subject> Subjects { get; set; }
+        public ICollection<Subject>? Subjects { get; set; }
     }
 
     public class Admin : User
